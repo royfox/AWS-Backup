@@ -13,3 +13,15 @@ Take a copy of config_sample.yml and call it config.yml, and enter your S3 crede
 
 To run, you can then just run the backup.sh script. It will dump your database, with the date in the filename, upload that file to S3, then remove the dumped .sql file.
 
+Example output:
+
+    Dumping the database
+    Uploading the file
+    Uploaded backup-20121118.sql to:
+    https://my-bucket-name.s3.amazonaws.com/backup-20121118.sql
+    
+    Use this URL to download the file:
+    https://my-bucket-name.s3.amazonaws.com/backup-20121118.sql?AWSAccessKeyId=00000000000000&Expires=000000000000&Signature=000000000000000
+    Removing the file
+    Done
+
